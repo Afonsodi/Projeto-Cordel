@@ -23,6 +23,8 @@
 :root {
     --fonte-destaque:'PassionOne-Regular';
     --fonte-texto:'Sriracha-Regular';
+    --cor01: white;
+    --cor02:black;
 }
 
 body {
@@ -30,23 +32,37 @@ body {
 }
 
 header{ 
-    background-color: black;
-    color: white;
+    background-color: var(--cor02);
+    color: var(--cor01);
     padding: 4px;
     text-align: center;
-}
+    }
 
-header > h1 {
-    font-size: 10vw;
-    font-family:var(--fonte-destaque);
-    margin-bottom: 0;
-}
+        header > h1 {
+        font-size: 10vw;
+        font-family:var(--fonte-destaque);
+        margin-bottom: 0;
+        font-variant: small-caps;
+        margin-top: 50px;
+        }
 
-header > p {
-    font-size: 2em;
-    font-family: var(--fonte-destaque);
-    margin-top: 0;
-}
+            header > p {
+            font-size: 2em;
+            font-family: var(--fonte-destaque);
+            margin-top: 0;
+            }
+
+                header >p > a { text-decoration: none;
+                            color: var(--cor01);
+                            }
+
+                            header >p> a:hover {
+                                text-decoration: underline;
+                                background-color: rgba(250, 205, 4, 0.774);
+                                transition-duration: 0.5s;
+                                border-radius: 3px;
+        
+                            }
 
 section {
     font-family:var(--fonte-texto);
@@ -58,71 +74,66 @@ section {
     margin: auto;
    
 }
-section.normal {
-     background-color: white;
-     color: black;
-    
-}
+    section.normal {
+      background-color:var(--cor01);
+      color: var(--cor02);
+      }
+             section.imagem > p {
+                background-color: rgba(0, 0, 0, 0.5);
+                padding-top: 10vh;
+                padding-bottom: 10vh;
+                line-height: 2em;
+                padding-left: 30px;
+                font-family: var(--fonte3);
+                font-size: 3.5vw;
+                box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+                font-size: 3.5vw;
+                display: inline-block;
+             }
+                    section.imagem {
+                        background-color: rgba(0, 0, 0, 0.897);
+                        color: var(--cor01);
+                        box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+                        background-size: cover;
+                        background-attachment: fixed;
+                        }
 
-section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
-    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
-    font-size: 3.5vw;
-    display: inline-block;
-  
-}
+                            #img01 {
+                                background-image: url(imagens/girassol.jpg);
+                            }
 
- p {
-    padding: 30px;
-}
+                            #img02 {
+                                background-image: url(imagens/reconhecimento-de-manuscrita.jpg);
+                            }
 
-  section.imagem {
-    background-color: rgba(0, 0, 0, 0.897);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
-    background-size: cover;
-    background-attachment: fixed;
-   
-}
-
-#img01 {
-    background-image: url(imagens/girassol.jpg);
-}
-
-#img02 {
-    background-image: url(imagens/reconhecimento-de-manuscrita.jpg);
-}
+    p {
+        padding: 30px;
+    }                  
 
 
 footer {
     text-align: center;
     margin: auto;
     padding: 5px;
-    background-color: black;
-    color: white;
+    background-color: var(--cor02);
+    color:var(--cor01);
 }
 
-footer > p {
-    margin: auto;
-    padding: 0px;
-}
+        footer > p {
+            margin: auto;
+            padding: 0px;
+        }
 
-footer a {
-    margin: auto;
-    text-decoration: none;
-    color: white;
-    padding: 0px 5px 0px 5px;
-    border-radius: 8px;}
+            footer a {
+                margin: auto;
+                text-decoration: none;
+                color: var(--cor01);
+                padding: 0px 5px 0px 5px;
+                border-radius: 8px;}
 
-    footer a:hover {
-        text-decoration: underline;
-        background-color: rgba(49, 4, 250, 0.925);
-        transition-duration: 0.5s;
-        
-    }
+                    footer a:hover {
+                        text-decoration: underline;
+                        background-color: rgba(49, 4, 250, 0.925);
+                        transition-duration: 0.5s;
+                        
+                    }
